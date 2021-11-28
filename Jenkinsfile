@@ -5,6 +5,7 @@ pipeline {
       steps {
         powershell 'python --version'
         powershell 'python helloworld.py'
+        echo 'Building'
       }
     }
 
