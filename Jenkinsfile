@@ -11,6 +11,7 @@ pipeline {
     stage('Test') {
       steps {
         timestamps()
+        echo 'Testing'
       }
     }
 
