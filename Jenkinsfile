@@ -10,14 +10,15 @@ pipeline {
 
     stage('Test') {
       steps {
-        timestamps()
         echo 'Testing'
+        powershell 'python helloworld.py'
       }
     }
 
     stage('Deploy') {
       steps {
         echo 'Deploying'
+        powershell 'python helloworld.py'
       }
     }
 
