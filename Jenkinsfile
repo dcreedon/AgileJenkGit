@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         powershell 'python --version'
-        powershell(script: 'python helloworld.py', returnStatus: true, returnStdout: true)
+        powershell 'python helloworld.py'
       }
     }
 
