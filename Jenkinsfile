@@ -20,6 +20,7 @@ pipeline {
       steps {
         echo 'Deploying'
         powershell 'python helloworld.py'
+        powershell 'python --version'
       }
     }
 
